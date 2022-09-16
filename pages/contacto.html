@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>SportClub-Contacto</title>
+    <link rel="stylesheet" href="../css/estilosindex.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+<!--LOGO Y LINKS INTERNOS-->
+<nav>
+    <a href="../Index.html">
+    <img src="../imagenes/Logo SportClub.PNG.jpg" alt="logo" width="210"height="45" class="logoSportClub">
+    </a>    
+ 
+    <div class="navegacion"></div>
+       <ul>
+          <a href="./contacto.html">CONTACTO</a>
+          <a href="./eventos.html">EVENTOS</a>
+          <a href="./planes.html">PLANES</a>
+          <a href="./sedes.html">SEDES</a>
+       </ul>
+    </div>
+</nav>
+
+
+ <main>
+<!--CHAT DE WHATSAPP-->
+    <section class="chatWhasapp">
+        <a href="https://api.whatsapp.com/send?phone=5401164840163" target="blank">
+            <img src="../imagenes/WP.png" alt="¿Preguntas?¡Escribinos!" width="300px">
+        </a>
+    </section>
+
+
+<!--FORMULARIO CONTACTO PERSONAS-->
+    <section>
+        <h2>Formulario para personas</h2>
+        <form action="ventas.html">
+                <div>
+                    <label for="nombre"> Nombre Completo </label>
+                    <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">  
+                </div>
+
+                <div>
+                    <label for="Mail">Mail</label>
+                    <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                </div>
+
+                <div>
+
+                     <label for="telefonicos">Teléfono</label>
+                     <input id="telefonicos" name="teléfono" type="teléfono" placeholder="11 XXXXXXXX"required>
+                </div>
+                <fieldset>
+                    <legend>Ingrese los siguientes Datos</legend>
+                    <legend>¿Sos socio?</legend>
+                    <label for="Si">Si
+                        <input id="Si" name="socio" type="radio" value="Si" checked >
+                    </label>
+                    <label for="No">No
+                        <input id="No" name="socio" type="radio" value="No" >
+                    </label>
+                
+                    <legend>Motivos del contacto</legend>
+                    <label for="planes">Quiero conocer los planes y costos.
+                        <input id="planes" name="planes" type="checkbox" value="planes">
+                    </label>
+                    <label for="sugerencia">Quiero realizar una consulta/sugerencia.
+                        <input id="sugerencia" name="sugerencia" type="checkbox" value="sugerencia">
+                    </label>
+                    <label for="reclamo">Quiero realizar un reclamo.
+                        <input id="reclamo" name="reclamo" type="checkbox" value="reclamo" >
+                    </label>
+                
+                    <legend>Indique su edad</legend>
+                    <input id="edad" name="edad" type="number" min=1 max=100 required>      
+                </fieldset>
+                <fieldset>
+                    <legend>Seleccione la sede</legend>
+                        <label for="sede">Sedes disponibles</label>
+                        <select name="sede" id="sede">
+                            <option value="Al Río">Al Río</option>
+                            <option value="Barracas" selected>Barracas</option>
+                            <option value="Beiró">Beiró</option>
+                            <option value="Belgrano">Belgrano</option>
+                            <option value="Bella Vista">Bella Vista</option>
+                            <option value="Cabildo">Cabildo</option>
+                            <option value="Caballito">Caballito</option>
+                            <option value="Cabildo">Cabildo</option>
+                            <option value="Caseros">Caseros</option>
+                            <option value="Casterlar">Castelar</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Escobar">Escobar</option>
+                            <option value="Flores">Flores</option>
+                            <option value="General Rodriguez">General Rodriguez</option>
+                            <option value="Isidro Casanova">Isidro Casanova</option>
+                            <option value="Martinez">Martinez</option>
+                            <option value="Mitre">Mitre</option>
+                            <option value="Palermo">Palermo</option>
+                            <option value="Pinamar Garden">Pinamar Garden</option>
+                            <option value="Plaza Italia">Plaza Italia</option>
+                            <option value="Puerto Madero">Puerto Madero</option>
+                            <option value="Rosario">Rosario</option>
+                            <option value="Tucumán">Tucumán</option>
+                            <option value="Unicenter">Unicenter</option>
+                            <option value="Urquiza">Urquiza</option>
+                        </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Indique un Comentario</legend>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
+                </fieldset>
+
+                <div>
+                        <input id="enviar" type="submit" value="Enviar">
+                        <input id="reset" type="reset" value="Limpiar">
+                </div>
+            </form>
+        </div>
+<section>
+<!--FORMULARIO CONTACTO CORPORATIVO-->
+<section>
+        <h2>Formulario corporativo</h2>
+        <form action="ventas.html">
+            <div>
+                <label for="nombre"> Nombre Completo </label>
+                <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">  
+            </div>
+
+            <div>
+                <label for="Mail">Mail</label>
+                <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+            </div>
+
+            <div>
+
+                 <label for="telefonicos">Teléfono</label>
+                 <input id="telefonicos" name="teléfono" type="teléfono" placeholder="11 XXXXXXXX"required>
+            </div>
+                <div>
+                    <fieldset>
+                        <legend>Ingrese los siguientes Datos</legend>
+                        <div>
+                            <label for="Empresa">Nombre de la empresa</label>
+                            <input id="empresa" name="empresa" type="text" placeholder="nombre de la empresa" required>
+                        </div>
+        
+                        <div>
+        
+                             <label for="empleados">Cantidad de empleados</label>
+                             <input id="empleados" name="empleados" type="number" placeholder="Ingrese nuúmero"required>
+                        </div>
+                    </fieldset>
+                </div>
+
+                    <div>
+                        <input id="enviar" type="submit" value="Enviar">
+                        <input id="reset" type="reset" value="Limpiar">
+                    </div>
+        </form>
+</section>
+
+
+<!--PREGUNTAS FRECUENTES PERSONAS-->
+<section>
+    <H2>Preguntas frecuentes</H2>
+        <div>
+            <h3>¿Cómo accedo a un pase de prueba gratis?</h3>
+            <p>Presentate en cualquier sede para pedir tu pase en el momento!</p>
+            <h3>¿Dónde puedo hacer el pato médico?</h3>
+            <p>Envía tu consulta a atencionalsocio@SomosSportClub.com.ar</p> 
+            <h3>¿Cómo hago para enviar mi CV?</h3>
+            <p>Envianos tu CV a postulante@SomosSportClub.com.ar</p>
+            <h3>¿Que necesito para empezar a entrenar?</h3>
+            <p>Tenés que acercarte a tu sucursal, en donde te tomarán la huella digital y podrás acceder a todas las sedes de tu categoría. También tenés que presentar un apto médico.</p>
+            <h3>¿A qué sucursales accedo siendo socio del Sindicato de Comercio?</h3>
+            <p>Podés acceder a:Ateneo de Juventud, Barrio Norte, Caballito, Devoto, Floresta, Megatlon Racing, Villa Crespo</p>
+            <h3>¿Cómo hago un reclamo?</h3>
+            <p>Para realizar tu reclamo, completá el formulario con tu nombre completo. Se estarán comunicando de tu sucursal para darte una respuesta.</p>
+        </div>
+</section>
+
+</main>
+
+
+<!--FOOTER-->
+<footer> 
+    <div class="RedesSociales">
+        <div class="ContenedorIconosRedes">
+            <div class="icon">
+                <a href="https://www.instagram.com/sportcluboficial/?hl=es" target="blank">
+                <svg heigth="45" width="45">
+                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                </svg>
+                <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+    
+            <div class="icon">
+                <a href="https://www.facebook.com/sportcluboficial/"target="blank">
+                <svg heigth="45" width="45">
+                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                </svg>
+                <i class='bx bxl-facebook-circle'></i>
+                </a>
+            </div>
+    
+            <div class="icon">
+                <a href= "https://api.whatsapp.com/send?phone=5401164840163"target="blank">
+                <svg heigth="45" width="45">
+                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                </svg>
+                <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </div>
+    
+            <div class="icon">
+                <a href="https://twitter.com/SportClub_Gym?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
+                <svg heigth="45" width="45">
+                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                </svg>
+                <i class='bx bxl-twitter' ></i>
+                </a>
+            </div>
+        </div>
+    </div> 
+    <p class="derechos">Todos los derechos reservados</p>
+</footer>    
+</body>
+</html>
