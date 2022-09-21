@@ -14,40 +14,61 @@
     
 /*LOGO Y LINKS INTERNOS*/
 nav{
-    padding: 10px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;}
+    align-items: center;}
 
 .logoSportClub{
-    width:200px;
-    height:45px;}
+    width:15rem;
+    height:3.2rem;}
 
-nav ul a{
+.logoSportClub1{
+    width:17rem;
+    height:3.5rem;}
+
+.nav-item{
     text-decoration: none;
     font-family: ANTON;
     font-size: 1.7rem;
     color: rgb(0, 0, 0);
-    margin: 40px;
+    margin: 9px;
+    margin-left: 75px;
     letter-spacing: 2px; 
+    color: #000000;
     background-image: linear-gradient(black, black);
     background-position: 0% 100%;
     background-repeat: no-repeat;
     background-size: 0% 4px;
     transition: background-size .3s;}
 
-nav ul a:hover, a:focus {
+.nav-item:hover, a:focus {
     background-size: 100% 2px;}
 
+.nav-item1{
+    text-decoration: none;
+    font-family: ANTON;
+    font-size: 1.9rem;
+    color: rgb(0, 0, 0);
+    margin: 11px;
+    margin-left: 85px;
+    letter-spacing: 2px; 
+    color: #000000;
+    background-image: linear-gradient(black, black);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 4px;
+    transition: background-size .3s;}
+
+.nav-item1:hover, a:focus {
+    background-size: 100% 2px;}
 
 @media screen and (max-width: 768px){
-    nav ul a{font-size: 1.5rem}
-    .logoSportClub{
+.nav-item{font-size: 1.5rem}
+.logoSportClub{
         width:150px;
         height:35px;}}
 
 @media screen and (max-width: 412px){
-    nav ul a{font-size: 1.2rem}
+    .nav-item{font-size: 1.2rem}
     .logoSportClub{
         width:150px;    
         height:35px;}}
@@ -68,11 +89,11 @@ nav ul a:hover, a:focus {
 /*FOOTER*/
 .RedesSociales {
     margin-top: 40px;
-    height: 29vh;
+    height: 20vh;
     display: grid;
     align-items: center;
     justify-content: center;
-    background-color: black;}
+    box-sizing:  border-box;}
 
 .ContenedorIconosRedes {
     width: 100%;
@@ -91,23 +112,23 @@ nav ul a:hover, a:focus {
     cursor: pointer;}
 
 .icon:hover {
-    background-color: #e60073;
-    box-shadow:  0 0 20px #e60073 ;}
+    background-color: #d21071;
+    box-shadow:  0 0 20px #d21071;}
 
 .icon:hover:nth-child(2) {
     background-color: #1877f2;
     box-shadow:  0 0 20px #1877f2;}
 
 .icon:hover:nth-child(3) {
-    background-color: #25d366;
-    box-shadow: 0 0 20px #25d366 ;}
+    background-color: #06b848;
+    box-shadow: 0 0 20px #06b848;}
 
 .icon:hover:nth-child(4) {
     background-color: #1da1f2;
     box-shadow:  0 0 20px #1da1f2 ;}
 
 .icon i {
-    color: #fff;
+    color: rgb(0, 0, 0);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,10 +145,11 @@ svg circle {
 .derechos{
     font-size: 1.1rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    background-color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding-bottom: 15px;}
+    padding-bottom: 30px;}
+
+
 
 
 /*GRID VISTA TABLET/MOBILE*/
@@ -161,16 +183,13 @@ svg circle {
 /*QUE OFRECEMOS*/
 .QueOfrecemos{
     background-color: #121515;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 2rem;
-    padding-top: 2rem;}
+    padding-bottom: 2rem;}
 
 .QueOfrecemos img{
-    width:30%;
-    margin-left: 3rem;}
-    
+    width:70%;
+    margin-left: 3rem;
+    padding-top: 2rem;}
+
 .QueOfrecemos div H1{
     font-style:italic;
     font-size:260%;
@@ -178,13 +197,17 @@ svg circle {
     color: aliceblue;
     letter-spacing: 2px;
     text-align: center;}
-    
+
 .parrafos{
     font-family: poppins;
     font-size: 140%;
     color: aliceblue;
     padding-right: 3.5rem; 
     padding-left: 4rem;}
+
+.TituloYParrafos {
+    padding-top: 6rem;
+}
 
 .TituloYParrafos{grid-area:TituloYParrafos}
 .QueOfrecemos img{grid-area: QueOfrecemosImg;}
@@ -237,6 +260,7 @@ svg circle {
 .QueOfrecemos img{
     width:30vh;
     height: 30vh;}}
+   
 
 /*ACTIVIDADES*/
 .actividadesContenedor h3{
@@ -249,10 +273,7 @@ svg circle {
     text-align: center;}
 
 .TipoDeActividades{
-    margin-bottom: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;}
+    margin-bottom: 25px;}
 
 .TipoDeActividades div{
     padding: 15px;}
@@ -268,7 +289,7 @@ svg circle {
 
 .TipoDeActividades img{
     box-shadow: 1px 2px 4px#363532;
-    transition: transform 0.5s; }
+    transition: transform 0.5s;}
 
 .TipoDeActividades img:hover{
     transform:scale(1.1,1.1);}
@@ -303,17 +324,13 @@ svg circle {
     font-style:italic;
     padding: 30px;}
 
-.valores{
-    justify-content: space-evenly;
-    display: flex;}
-    
 .valores ul{
     font-family: poppins;
     font-weight: NORMAL;
     font-size: 1.5rem;
     text-align: center;
     color: rgb(0, 0, 0);
-    margin: 20px;
+    padding-right: 2rem;
     letter-spacing: 2px;
     background-color: #F8C216;
     border-radius: 10px;}
@@ -415,12 +432,7 @@ font-size: 2.3rem;}
 /*VIDEO HEADER*/
 header{
     position: relative;}
-    background: #F8C216;}
-
-.HeaderSedes video{
-    width:100%;
-    height: 100vh;}
-
+    
 header H1{
     position: absolute;
     font-style:italic;
@@ -449,7 +461,15 @@ header H1{
 
 /*HORARIOS DE LOS GIMNASIOS*/
 .horarios{
-    padding-bottom: 5%;}
+    padding-bottom: 1%;}
+
+.ContainerTable H3{
+    font-family:poppins;
+    font-size:25px;
+    padding:20px;
+    padding-top: 10px;
+    color: rgb(0,0,0);
+    text-align: center;}
 
 .horarios h2{
     font-size:40px;
@@ -457,20 +477,13 @@ header H1{
     letter-spacing: 2px;
     font-style:italic;
     padding: 30px;
+    text-align: center;
     color: rgb(0, 0, 0);}
-
-.horarios caption{
-    font-family:poppins;
-    font-size:25px;
-    padding:20px;
-    padding-top: 10px;
-    color: rgb(0,0,0);
-    text-align: left;}
 
 .horarios table{
     background-color: #F8C216;
-    margin-left:1%;
-    margin-left:1%;
+    width: 95%;
+    margin-left:2.5%;
     box-shadow: 1px 2px 4px#363532;}
 
 .horarios th{
@@ -486,19 +499,24 @@ header H1{
     padding-top: 15px;}
 
 
+@media screen and (max-width: 760px) {
+.horarios{
+    padding-right: 15%;;
+}
+}
 /*SEDES NUEVAS*/
 .NuevasSedes h2{
     font-size:40px;
     font-family:anton;
     letter-spacing: 2px;
     font-style:italic;
-    padding: 30px;
+    padding: 30px;   
     color: rgb(0, 0, 0);}
 
-.NuevasSedesDatos{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 30px;}
+@media screen and (max-width: 760px) {
+    .NuevasSedes h2{
+        text-align: center;
+    }}
 
 .Almagro H3{
     font-family: poppins;
@@ -521,6 +539,7 @@ header H1{
     font-family: poppins;
     font-size: 17px;
     text-align: center;}
+
 
 
 /*DEMÁS SEDES*/
@@ -594,10 +613,13 @@ header H1{
 .demasSedes ul:hover{
     transform:scale(1.1,1.1);}
 
-.DetalleSedes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;}
+.DetalleSedes ul{
+    margin: 2%;}
+
+.DetalleSedes ul h3{
+    font-family:poppins;
+    font-size:25px;
+    font-weight: bold;}
 
 .DetalleSedes ul p a{
     background-color: #F8C216;
@@ -684,11 +706,8 @@ header H1{
 .galeria_imagenes{
     position:relative;
     cursor:pointer;
-    /*que se esnconda todo lo que salga de ese elemento
-    ya que este elemento va a referenciar a un texto */
     overflow: hidden;}
 
-/*pseudo elemento before*/
 .galeria_imagenes::before{
     content:"";
     position:absolute;
@@ -697,8 +716,7 @@ header H1{
     left:0;
     right:0;
     background-color:#ffea00a6;
-   /* transform: translate(100%);se mueve hacia la derecha */
-   /* transform: scale(0);*/
+
     transform: scaleY(0);
     transition: transform .4s;
     color:white;
@@ -708,10 +726,8 @@ header H1{
     font-size:1.5rem ;}
 
 .galeria_imagenes:hover::before{
-  /*  transform: scale(1) rotate(360deg)  ;*/
      transform: scaleY(1);}
 
-   /* transform: translate(0)  ;*/
    
 .galeria_imagenes--g1{
     grid-area: img1;}
@@ -740,11 +756,8 @@ header H1{
 .galeria_img{
     width: 100%;
     height: 100%;
-    /*la imagen no pierde la resolucion */
     object-fit: cover;}
 
-
-/*celular o pantallas menores a 768*/
 @media(max-width:768px){
 
 .galeria{

@@ -8,25 +8,38 @@
     <link rel="stylesheet" href="../css/estilosindex.css">
     <title>SportClub-Eventos</title>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
 
 
 <!--LOGO Y LINKS INTERNOS-->
-<nav>
-    <a href="../Index.html">
-    <img src="../imagenes/Logo SportClub.PNG.jpg" alt="logo" width="210"height="45" class="logoSportClub">
-    </a>    
- 
-    <div class="navegacion"></div>
-       <ul>
-          <a href="./contacto.html">CONTACTO</a>
-          <a href="./eventos.html">EVENTOS</a>
-          <a href="./planes.html">PLANES</a>
-          <a href="./sedes.html">SEDES</a>
-       </ul>
+<nav class="navbar navbar-expand-lg navbar-light colorCabeceras">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../Index.html">
+        <img src="../imagenes/Logo SportClub.PNG.jpg"alt="logo" class="logoSportClub">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/eventos.html">EVENTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/planes.html">PLANES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../pages/sedes.html">SEDES</a>
+          </li>
+        </ul>
+      </div>
     </div>
- </nav>
+  </nav>
 
 
 <!--HEADER-->
@@ -104,22 +117,22 @@
 
 
 <!--FOOTER-->
-<footer> 
+<footer class="footerfinal"> 
     <div class="RedesSociales">
         <div class="ContenedorIconosRedes">
             <div class="icon">
                 <a href="https://www.instagram.com/sportcluboficial/?hl=es" target="blank">
-                <svg heigth="45" width="45">
-                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
-                </svg>
-                <i class='bx bxl-instagram'></i>
+                    <svg heigth="60" width="60">
+                        <circle cx="30" cy="30" r=27 stroke="black" stroke-width="4" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
                 </a>
             </div>
     
             <div class="icon">
                 <a href="https://www.facebook.com/sportcluboficial/"target="blank">
-                <svg heigth="45" width="45">
-                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
                 </svg>
                 <i class='bx bxl-facebook-circle'></i>
                 </a>
@@ -127,8 +140,8 @@
     
             <div class="icon">
                 <a href= "https://api.whatsapp.com/send?phone=5401164840163"target="blank">
-                <svg heigth="45" width="45">
-                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
                 </svg>
                 <i class='bx bxl-whatsapp' ></i>
                 </a>
@@ -136,15 +149,18 @@
     
             <div class="icon">
                 <a href="https://twitter.com/SportClub_Gym?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
-                <svg heigth="45" width="45">
-                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
                 </svg>
                 <i class='bx bxl-twitter' ></i>
                 </a>
             </div>
         </div>
     </div> 
-    <p class="derechos">Todos los derechos reservados</p>
-</footer>   
+    <p class="derechos">Copyright © 2022 Todos los derechos reservados</p>
+    <p class="derechos">Gimnasios Argentinos S.A</p>
+</footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>

@@ -7,27 +7,41 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>SportClub-Inicio</title>
     <link rel="stylesheet" href="./css/estilosindex.css">
+    <script src="./js/scrollreveal.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
 
 <!--LOGO Y LINKS INTERNOS-->
-<nav>
-    <a href="./Index.html">
-    <img src="./imagenes/Logo SportClub.PNG.jpg" alt="logo" class="logoSportClub">
-    </a>    
-   
-    <div>
-        <ul>
-            <a href="./pages/contacto.html">CONTACTO</a>
-            <a href="./pages/eventos.html">EVENTOS</a>
-            <a href="./pages/planes.html">PLANES</a>
-            <a href="./pages/sedes.html">SEDES</a>
+<nav class="navbar navbar-expand-lg navbar-light colorCabeceras">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./Index.html">
+        <img src="./imagenes/Logo SportClub.PNG.jpg"alt="logo" class="logoSportClub1">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navegacion">
+          <li class="nav-item1">
+            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link active" aria-current="page" href="./pages/eventos.html">EVENTOS</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link active" aria-current="page" href="./pages/planes.html">PLANES</a>
+          </li>
+          <li class="nav-item1">
+            <a class="nav-link active" aria-current="page" href="./pages/sedes.html">SEDES</a>
+          </li>
         </ul>
+      </div>
     </div>
-</nav>
+  </nav>
     
 
 <!--BANNER-->
@@ -55,14 +69,21 @@
 
 
 <!--¿QUÉ OFRECEMOS?-->
-    <section class="QueOfrecemos">  
-        <img src="./imagenes/Somos sportclub.png" alt="banner de inicio" loading="lazy" >
-        <div class="TituloYParrafos">    
-            <H1>SOMOS SPORTCLUB</H1>
-            <div class="parrafos">
-                <li>Rutinas personalizadas de acuerdo a tus objetivos</li>
-                <li>Plan de nutrición</li>
-                <li>Seguimiento personalizado a lo largo de tus entrenamientos</li>
+    <section class="QueOfrecemos"> 
+        <div class="container"> 
+            <div class="row">
+                <div class="col">
+                    <img src="./imagenes/Somos sportclub.png" alt="banner de inicio" loading="lazy" >
+                </div>
+                <div class="col">
+                    <div class="TituloYParrafos">   
+                    <H1>SOMOS SPORTCLUB</H1></div>
+                    <div class="parrafos">
+                        <li>Rutinas personalizadas de acuerdo a tus objetivos</li>
+                        <li>Plan de nutrición</li>
+                        <li>Seguimiento personalizado a lo largo de tus entrenamientos</li>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -72,38 +93,44 @@
 <section class="actividadesContenedor" width="100%">
     <H3>Actividades</H3>
     <div class="TipoDeActividades">
-        <div>
+    <div class="container">
+        <div class="row">
+        <div class="col acts1">
             <p>Entrenamiento HIIT</p>
             <img src="./imagenes/Hiit2.jpg" alt="entranamiento hiit" width="250px" height="250px" loading="lazy">
         </div>
-        <div>
+        <div class="col acts1">
             <p>Pileta libre & clases</p>
             <img src="./imagenes/Swimming2.PNG" alt="Natación" width="250px" height="250px" loading="lazy">
         </div>
-        <div>
+        <div class="col acts1">
             <p>Running Team</p>
             <img src="./imagenes/Running2.jpg" alt="Running Team" width="250px" height="250px" loading="lazy">
         </div>
-        <div>
+        <div class="col acts1">
             <p>Spinning indoor y outdoor</p>
             <img src="./imagenes/Spinning.jpg" alt="Sppining" width="250px" height="250px" loading="lazy">   
         </div>
-        <div>
+        </div>
+        <div class="row">
+        <div class="col acts2">
             <p>Yoga</p>
             <img src="./imagenes/Yoga.jpg" alt="Yoga" width="250px" height="250px" loading="lazy">
         </div>
-        <div>
+        <div class="col acts2">
             <p>Musculación</p>
             <img src="./imagenes/Musculacion.jpg" alt="Musculacion" width="250px" height="250px" loading="lazy">
         </div>
-        <div>
+        <div class="col acts2">
             <p>Boxing</p>
             <img src="./imagenes/boxing.jpg" alt="boxing" width="250px" height="250px" loading="lazy">
         </div>
-        <div>
+        <div class="col acts2">
             <p>Pilates</p>
             <img src="./imagenes/Pilates.jpg" alt="pilates" width="250px" height="250px" loading="lazy">  
         </div>
+        </div>
+    </div>
     </div>
 </section>
 
@@ -116,20 +143,36 @@
 
 
 <!--NUESTROS VALORES-->
-    <article> 
+    <article class="valoresContenedor"> 
         <H3 class="NuestrosValoresTitulo">Nuestros valores</H3>
-        <div class="valores">
-            <ul class="valores1">Sinergia</ul>
-            <ul class="valores2"> Profesionalismo </ul>
-            <ul class="valores3"> Bienestar y salud </ul>
-            <ul class="valores4"> Crecimiento personal </ul>
+        <div class="valores container">
+        <div class="row">
+            <div class="col">
+                <ul class="valores1">Sinergia</ul>
+            </div>
+            <div class="col">           
+                 <ul class="valores2"> Profesionalismo </ul>
+            </div>
+            <div class="col"> 
+                <ul class="valores3"> Bienestar y salud </ul>
+            </div>
+            <div class="col"> 
+                <ul class="valores4"> Crecimiento personal </ul>
+            </div>
+        </div>
         </div>
             <br>
-        <div class="listadoDeAcciones">    
-            <ul>
-                <li>Promovemos la participación de todos los miembros del equipo y nos potenciamos unos a otros</li>
-                <li>Valoramos los buenos vínculos y la interacción amistosa y diversa en la comunidad SportClub</li>
-                <li>Celebramos nuestros logros en equipo</li>
+        <div class="listadoDeAcciones container">    
+            <ul class="col">
+                <div class="row">
+                    <li>Promovemos la participación de todos los miembros del equipo y nos potenciamos unos a otros</li>
+                </div>
+                <div class="row">
+                    <li>Valoramos los buenos vínculos y la interacción amistosa y diversa en la comunidad SportClub</li>
+                </div>
+                <div class="row">
+                    <li>Celebramos nuestros logros en equipo</li>
+                </div>
             </ul>
         </div>
     </article>     
@@ -197,22 +240,22 @@
 
 
 <!--FOOTER-->
-<footer> 
+<footer class="footerfinal"> 
     <div class="RedesSociales">
         <div class="ContenedorIconosRedes">
             <div class="icon">
                 <a href="https://www.instagram.com/sportcluboficial/?hl=es" target="blank">
-                <svg heigth="45" width="45">
-                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
-                </svg>
-                <i class='bx bxl-instagram'></i>
+                    <svg heigth="60" width="60">
+                        <circle cx="30" cy="30" r=27 stroke="black" stroke-width="4" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
                 </a>
             </div>
     
             <div class="icon">
                 <a href="https://www.facebook.com/sportcluboficial/"target="blank">
-                <svg heigth="45" width="45">
-                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
                 </svg>
                 <i class='bx bxl-facebook-circle'></i>
                 </a>
@@ -220,8 +263,8 @@
     
             <div class="icon">
                 <a href= "https://api.whatsapp.com/send?phone=5401164840163"target="blank">
-                <svg heigth="45" width="45">
-                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
                 </svg>
                 <i class='bx bxl-whatsapp' ></i>
                 </a>
@@ -229,15 +272,18 @@
     
             <div class="icon">
                 <a href="https://twitter.com/SportClub_Gym?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
-                <svg heigth="45" width="45">
-                    <circle cx="30" cy="30" r=27 stroke="white" stroke-width="4" fill="none" ></circle>
+                <svg heigth="60" width="60">
+                    <circle cx="30" cy="30" r=27 stroke="BLACK" stroke-width="4" fill="none" ></circle>
                 </svg>
                 <i class='bx bxl-twitter' ></i>
                 </a>
             </div>
         </div>
     </div> 
-    <p class="derechos">Todos los derechos reservados</p>
+    <p class="derechos">Copyright © 2022 Todos los derechos reservados</p>
+    <p class="derechos">Gimnasios Argentinos S.A</p>
 </footer>
+<script src="./js/index.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script> 
 </body>
 </html>
