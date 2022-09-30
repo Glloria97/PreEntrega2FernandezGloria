@@ -5,6 +5,12 @@ window.sr = ScrollReveal();
         origin: 'bottom',
         distance: '-30px',
      });
+   
+     sr.reveal('.actividadesContenedor', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '-30px',
+   });
 
     sr.reveal('.acts1', {
         duration: 2000,

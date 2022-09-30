@@ -61,18 +61,6 @@ nav{
 .nav-item1:hover, a:focus {
     background-size: 100% 2px;}
 
-@media screen and (max-width: 768px){
-.nav-item{font-size: 1.5rem}
-.logoSportClub{
-        width:150px;
-        height:35px;}}
-
-@media screen and (max-width: 412px){
-    .nav-item{font-size: 1.2rem}
-    .logoSportClub{
-        width:150px;    
-        height:35px;}}
-
 
 /*CHAT DE WHATSAPP*/
 .chatWhasapp{
@@ -80,10 +68,6 @@ nav{
     bottom: 10px;
     right: 10px;
     z-index: 9999;}
-
-@media screen and (max-width: 768px){
-.chatWhasapp{
-    visibility: hidden;}}
 
 
 /*FOOTER*/
@@ -152,25 +136,7 @@ svg circle {
 
 
 
-/*GRID VISTA TABLET/MOBILE*/
-.RedesSociales H3{grid-area: TituloRedesSociales;}
-.redesSoc1{grid-area: redesSoc1;}
-.redesSoc2{grid-area: redesSoc2;}
-.redesSoc3{grid-area: redesSoc3;}
-.redesSoc4{grid-area: redesSoc4;}
-.redesSoc5{grid-area: redesSoc5;}
 
-@media screen and (max-width: 768px) {
-.RedesSociales{
-    display: grid;
-    grid-template-areas: 
-    'TituloRedesSociales TituloRedesSociales TituloRedesSociales TituloRedesSociales TituloRedesSociales'
-    'redesSoc1 redesSoc2 redesSoc3 redesSoc4 redesSoc5';
-    gap:20px;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: repeat(2 , auto);
-    font-size:1rem;
-    text-align: center;}}
 
 
                                 /*INICIO PÁGINA INICIO*/
@@ -206,61 +172,7 @@ svg circle {
     padding-left: 4rem;}
 
 .TituloYParrafos {
-    padding-top: 6rem;
-}
-
-.TituloYParrafos{grid-area:TituloYParrafos}
-.QueOfrecemos img{grid-area: QueOfrecemosImg;}
-
-@media screen and (max-width: 768px){
-.QueOfrecemos{
-    display: grid;
-    grid-template-areas: 
-    "TituloYParrafos"
-    "QueOfrecemosImg";
-    gap:20px;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    padding-top: 1.5rem;} 
-
-.QueOfrecemos div H1{
-    font-size: 2.2rem;}
-
-.parrafos{
-    font-size:1.2rem;
-    text-align: center;}
-
-.QueOfrecemos img{
-    width:65vh;
-    margin-left: 10%;}}
-
-@media screen and (max-width: 768px){
-.QueOfrecemos img{
-    width:65vh;
-    margin-left: 10%;}}
-
-@media screen and (max-width: 412px){
-.QueOfrecemos{
-    display: grid;
-    grid-template-areas: 
-    "TituloYParrafos"
-    "QueOfrecemosImg";
-    gap:20px;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    padding-top: 1.5rem;} 
-
-.QueOfrecemos div H1{
-    font-size: 2rem;}
-
-.parrafos{
-    font-size:1.2rem;
-    text-align: center;}
-
-.QueOfrecemos img{
-    width:30vh;
-    height: 30vh;}}
-   
+    padding-top: 6rem;}
 
 /*ACTIVIDADES*/
 .actividadesContenedor h3{
@@ -272,11 +184,8 @@ svg circle {
     font-style:italic;
     text-align: center;}
 
-.TipoDeActividades{
-    margin-bottom: 25px;}
-
 .TipoDeActividades div{
-    padding: 15px;}
+    padding: 1rem !important;}
 
 .TipoDeActividades p{
     font-family: poppins;
@@ -289,24 +198,10 @@ svg circle {
 
 .TipoDeActividades img{
     box-shadow: 1px 2px 4px#363532;
-    transition: transform 0.5s;
-    margin-left: 4rem;}
+    transition: transform 0.5s;}
 
 .TipoDeActividades img:hover{
     transform:scale(1.1,1.1);}
-
-
-.TipoDeActividades {grid-area: QueOfrecemosActividades;}
-
-@media screen and (max-width: 768px) {
-.TipoDeActividades{
-    display: grid;
-    grid-template-columns:auto;
-    grid-template-rows: auto;
-    justify-content: center;
-    text-align: center;
-    grid-template-areas: 
-    "QueOfrecemosActividades";}}
 
 /*PLANES*/
 .planes img{
@@ -342,31 +237,6 @@ svg circle {
     padding:30px;
     padding-left: 10%;
     padding-top: 15px;}
-
-.valores1{grid-area:valores1}
-.valores2{grid-area:valores2}
-.valores3{grid-area:valores3}
-.valores4{grid-area:valores4}
-
-@media screen and (max-width: 768px) {
-.valores{
-    display: grid;
-    grid-template-areas: 
-        'valores1 valores2'
-        'valores3 valores4';
-    gap:20px;
-    grid-template-columns: 1fr,1fr;
-    grid-template-rows: 1fr,1fr;}
-
-.NuestrosValoresTitulo{
-font-size: 2.3rem;}
-
-.valores ul{
-    font-size: 1.3rem;}
-
-.listadoDeAcciones{
-    font-size: 1.2rem;}}
-
 
 /*VIDEO DE SPORTCLUB*/
 .VideoDeSportClub{
@@ -421,12 +291,6 @@ font-size: 2.3rem;}
     transform: scale(1.1,1.1);
     background-color: rgba(0, 0, 0, 0.441) cover;}
 
-@media screen and (max-width: 768px) {
-.coaches H3{
-    font-size: 2.3rem;}
-
-.CoachesFotosYNombres p{
-    font-size: 1.2rem;}}
 
                                 /*INICIO PÁGINA SEDES*/
 
@@ -444,80 +308,15 @@ header H1{
     top: 41%;
     left: 17%;}
 
-@media screen and (max-width: 1000px) {
-header H1{
-    font-size: 400%;}}
 
-@media screen and (max-width: 760px) {
-    header H1{
-        font-size: 300%;}}
-
-@media screen and (max-width: 500px) {
-    header H1{
-        font-size: 250%;}}
-        
-@media screen and (max-width: 412px) {
-    header H1{
-        font-size: 220%;}}
-
-/*HORARIOS DE LOS GIMNASIOS*/
-.horarios{
-    padding-bottom: 1%;}
-
-.ContainerTable H3{
-    font-family:poppins;
-    font-size:25px;
-    padding:20px;
-    padding-top: 10px;
-    color: rgb(0,0,0);
-    text-align: center;}
-
-.horarios h2{
-    font-size:40px;
-    font-family:anton;
-    letter-spacing: 2px;
-    font-style:italic;
-    padding: 30px;
-    text-align: center;
-    color: rgb(0, 0, 0);}
-
-.horarios table{
-    background-color: #F8C216;
-    width: 95%;
-    margin-left:2.5%;
-    box-shadow: 1px 2px 4px#363532;}
-
-.horarios th{
-    font-family:poppins;
-    font-size:20px;
-    padding-top: 15px;
-    width:135px;
-    border-bottom: solid 5px #775d08;}
-
-.horarios td{
-    font-family:poppins;
-    font-size:15px;
-    padding-top: 15px;}
-
-
-@media screen and (max-width: 760px) {
-.horarios{
-    padding-right: 15%;;
-}
-}
 /*SEDES NUEVAS*/
 .NuevasSedes h2{
     font-size:40px;
     font-family:anton;
     letter-spacing: 2px;
     font-style:italic;
-    padding: 30px;   
+    padding: 2%;  
     color: rgb(0, 0, 0);}
-
-@media screen and (max-width: 760px) {
-    .NuevasSedes h2{
-        text-align: center;
-    }}
 
 .Almagro H3{
     font-family: poppins;
@@ -527,21 +326,16 @@ header H1{
 
 .Almagro p{
     font-family: poppins;
-    font-size: 17px;
-    text-align: center;}
+    font-size: 17px;}
 
 .Hurlingan H3{
     font-family: poppins;
     font-size: 17px;
-    font-weight: bold;
-    text-align: center;}
+    font-weight: bold;}
 
 .Hurlingan p{
     font-family: poppins;
-    font-size: 17px;
-    text-align: center;}
-
-
+    font-size: 17px;}
 
 /*DEMÁS SEDES*/
 .parallax1{
@@ -599,14 +393,12 @@ header H1{
     letter-spacing: 2px;}
 
 .demasSedes ul{
-    width:25%;
     border-style: unset;
+    margin-left: 5% !important ;
     border-radius: 15px;
     margin-bottom: 2%;
-    margin-top: 2%;
     background-color: #F8C216;
     text-align: center;
-    padding: 1%;
     font-family: poppins;
     font-size: 17px;
     transition: transform 0.5s; }
@@ -615,7 +407,8 @@ header H1{
     transform:scale(1.1,1.1);}
 
 .DetalleSedes ul{
-    margin: 2%;}
+    margin-top: 1%;
+    margin-bottom: 1%;}
 
 .DetalleSedes ul h3{
     font-family:poppins;
@@ -639,51 +432,7 @@ header H1{
     background-color: #000000;
     text-decoration: none;}
 
-/*VISTA TABLET/MOBILE*/
-.Almagro{grid-area: Almagro;}
-.Hurlingan{grid-area: Hurlingan;}
 
-@media screen and (max-width: 768px) {
-
-.NuevasSedesDatos{
-    display: grid;
-    grid-template-areas: 
-    "Almagro"
-    "Hurlingan";
-    gap:20px;
-    grid-template-columns: auto;
-    grid-template-rows: auto;} 
-
-.ContainerTable{
-    margin-left: 25%;}
-
-.horarios h2{
-    margin-left: 25%;}
-
-.table{
-    padding: 5%;}
-
-.table caption{
-    font-size: 25px;}
-
-.table thead {
-    display: none;}
-    
-.table th, .table td{
-    font-size: 17px;}
-
-.table td{
-    display: block;
-    text-align: right;}
-
-.table td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    text-transform: uppercase;
-    float: left;}
-
-.demasSedes ul{
-    font-size: 14px;}}
                         
                                     /*FIN PÁGINA SEDES*/
 
@@ -777,5 +526,27 @@ header H1{
     font-size: 1rem;}
 
 .navegacion{
-    display: none;}
-}
+    display: none;}}
+
+ /*WHATSAPP*/   
+@media screen and (max-width: 768px){
+.chatWhasapp{
+    visibility: hidden;}}
+
+ /*TÍTULO SEDES*/  
+@media screen and (max-width: 1000px) {
+header H1{
+    font-size: 400%;}}
+
+@media screen and (max-width: 760px) {
+    header H1{
+        font-size: 300%;}}
+
+@media screen and (max-width: 500px) {
+    header H1{
+        font-size: 250%;}}
+        
+@media screen and (max-width: 412px) {
+    header H1{
+        font-size: 220%;}}
+
