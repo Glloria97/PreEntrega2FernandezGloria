@@ -47,3 +47,39 @@ window.sr = ScrollReveal();
         origin: 'bottom',
         distance: '-50px',
      });
+
+     sr.reveal('.formulario', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '-50px',
+   });
+
+   sr.reveal('.seccionnutricion', {
+      duration: 2000,
+      origin: 'bottom',
+      distance: '-50px',
+   });
+
+   sr.reveal('.seccionOutdoor', {
+      duration: 2500,
+      origin: 'bottom',
+      distance: '-50px',
+   });
+
+   sr.reveal('.secciontodos', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '-50px',
+   });
+
+   sr.reveal('.maraton', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '-50px',
+   });
+
+   sr.reveal('.FondoDiaDelNiño', {
+      duration: 3000,
+      origin: 'bottom',
+      distance: '-50px',
+   });

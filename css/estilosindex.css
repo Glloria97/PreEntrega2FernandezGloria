@@ -135,10 +135,6 @@ svg circle {
 
 
 
-
-
-
-
                                 /*INICIO PÁGINA INICIO*/
 
 /*HEADER*/
@@ -308,6 +304,78 @@ header H1{
     top: 41%;
     left: 17%;}
 
+/*HORARIOS DE LOS GIMNASIOS*/
+.horarios{
+    padding-bottom: 1%;}
+
+.ContainerTable H3{
+    font-family:poppins;
+    font-size:25px;
+    padding:20px;
+    padding-top: 10px;
+    color: rgb(0,0,0);
+    text-align: center;}
+
+.horarios h2{
+    font-size:40px;
+    font-family:anton;
+    letter-spacing: 2px;
+    font-style:italic;
+    padding: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);}
+
+.horarios table{
+    background-color: #F8C216;
+    width: 95%;
+    margin-left:2.5%;
+    box-shadow: 1px 2px 4px#363532;}
+
+.horarios th{
+    font-family:poppins;
+    font-size:20px;
+    padding-top: 15px;
+    width:135px;
+    border-bottom: solid 5px #775d08;}
+
+.horarios td{
+    font-family:poppins;
+    font-size:15px;
+    padding-top: 15px;}
+
+@media screen and (max-width: 760px) {
+.horarios{
+    padding-right: 15%;;
+}
+.ContainerTable{
+    margin-left: 25%;}
+
+.horarios h2{
+    margin-left: 25%;}
+
+.table{
+    padding: 5%;}
+
+.table caption{
+    font-size: 25px;}
+
+.table thead {
+    display: none;}
+    
+.table th, .table td{
+    font-size: 17px;}
+
+.table td{
+    display: block;
+    text-align: right;}
+
+.table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;}
+
+}
 
 /*SEDES NUEVAS*/
 .NuevasSedes h2{
@@ -438,6 +506,52 @@ header H1{
 
                                     /*INICIO PÁGINA EVENTOS*/
 
+.titulomaraton{
+    font-size:3rem;
+    font-family:anton;
+    letter-spacing: 2px;
+    font-style:italic;
+    text-align:center;
+    color:#000000;
+    margin-top: 3rem;}
+
+.eventosimagen{
+    width: 100%;
+    height: 95vh;
+}
+.textomaraton{
+    font-family: poppins;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;}
+
+.imagenmaraton{
+    height:90%;
+    width: 100%;}
+
+.contenedormaraton{
+    margin-left: 15%;}
+
+.FondoDiaDelNiño{
+    background-color:#F8C216;}
+
+.tituloDiaDelNiño{
+    font-size:3rem;
+    font-family:anton;
+    letter-spacing: 2px;
+    font-style:italic;
+    text-align:center;
+    color:#000000;
+    padding-top: 3%;}
+
+.parrafoDiaDelNiño{
+    font-family: poppins;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #000000;
+    text-align: center;}
 
 .GaleriaEventos{
     padding-bottom : 3em;
@@ -466,7 +580,6 @@ header H1{
     left:0;
     right:0;
     background-color:#ffea00a6;
-
     transform: scaleY(0);
     transition: transform .4s;
     color:white;
@@ -478,7 +591,6 @@ header H1{
 .galeria_imagenes:hover::before{
      transform: scaleY(1);}
 
-   
 .galeria_imagenes--g1{
     grid-area: img1;}
 
@@ -549,4 +661,184 @@ header H1{
 @media screen and (max-width: 412px) {
     header H1{
         font-size: 220%;}}
+
+                                    /*FIN PÁGINA EVENTOS/
+
+                                    /*INICIO PÁGINA CONTACTO*/
+
+.tituloFormulario H2{
+    font-size:4rem;
+    font-family:anton;
+    letter-spacing: 2px;
+    font-style:italic;
+    text-align:center;
+    color:#F8C216;
+    margin-top: 17rem;}
+
+.tituloFormulario{
+    width: 90%;
+    height: 150VH;
+    background-image: url(https://images.pexels.com/photos/4752861/pexels-photo-4752861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);}
+
+.formulario{
+    height: 100vh;
+    width: 100%;
+    width: 100%;
+    height: 100%;  
+    padding: 1.2rem 5rem;}
+
+.textoFormulario{
+    font-family: poppins;
+    font-size: 1.3rem;}
+
+.MotivoContacto{
+    font-family: poppins;
+    font-size: 1.3rem;
+    padding: 0.2rem;}
+
+.subtitulos{
+    font-family: poppins;
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding-left: 0% !important;}
+
+.subtitulos1{
+    font-family: poppins;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 0.7rem;}
+
+.contact-box{
+    max-width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8C216;
+    box-shadow: 0px 0px 19px 5px rgba( 0, 0, 0, 0.19 );
+    padding: 2rem;}
+
+.field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.184);
+    outline:none;
+    background-color: #ecdd85;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.field:hover{
+    background-color: rgba(0,0,0,0.1);}
+
+.field:focus{
+    border: 2px solid #8d6d05;
+    background-color: #fff;}
+
+#btn1{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #090909;
+    color: #fff ;
+    font-size: 1.1rem;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;}
+
+#btn2{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #090909;
+    color: #fff ;
+    font-size: 1.1rem;
+    border: none;
+    outline:none;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;}
+
+#btn1:hover{
+    background-color: #f82516;}
+
+#btn2:hover{
+    background-color: #f82516;}
+
+@media screen and (max-width: 880px){
+    .contact-box{
+        grid-template-columns: auto;
+        margin-top: 2%;}
+
+    .tituloFormulario{
+        width: 0%;
+        height: 15VH;}
+
+    .tituloFormulario H2{
+        font-size:4rem;
+        font-family:anton;
+        letter-spacing: 2px;
+        font-style:italic;
+        text-align:center;
+        color:#000000;
+        margin-top: 1rem;
+        margin-bottom: 1rem;}
+    
+    .formulario{
+        padding: 0%;
+    }}
+
+                                    /*FIN PÁGINA CONTACTO/
+
+                                    /*INICIO PÁGINA PLANES*/
+
+.HeaderPlanes{
+    width: 100%;
+    height:15%}
+
+#imgagenesPlanes{
+    width:20rem;
+    height: 13rem;
+    margin-left: 15%;
+    margin-bottom: 5%;}
+
+.fondosPlanes{
+    font-size:2.5rem;
+    font-family:anton;
+    letter-spacing: 2px;
+    font-style:italic;
+    margin-top: 1%;
+    text-align:center;
+    color:#000000;
+    margin-bottom: 1.2rem;
+    background-color: #F8C216;
+    transition: transform 0.5s; }
+
+.fondosPlanes:hover{
+    transform:scale(1.1,1.1);}
+
+.textoplanes{
+    font-family: poppins;
+    font-size: 1.3rem;
+    margin-left: 20%;
+    margin-top: 10%;}
+
+.textooutdoor{
+    font-family: poppins;
+    font-size: 1.3rem;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    margin-left: 20%;
+    margin-right: 5%;}
+
+@media screen and (max-width: 760px) {
+    .textoplanes{margin-top: 0%;
+    margin-bottom: 3%;}
+
+    
+}
+
+
+
+
+
 

@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>SportClub-Contacto</title>
     <link rel="stylesheet" href="../css/estilosindex.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <script src="../js/scrollreveal.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
@@ -42,7 +45,7 @@
     </div>
   </nav>
 
- <main>
+ 
 <!--CHAT DE WHATSAPP-->
     <section class="chatWhasapp">
         <a href="https://api.whatsapp.com/send?phone=5401164840163" target="blank">
@@ -51,157 +54,65 @@
     </section>
 
 
-<!--FORMULARIO CONTACTO PERSONAS-->
-    <section>
-        <h2>Formulario para personas</h2>
-        <form action="ventas.html">
-                <div>
-                    <label for="nombre"> Nombre Completo </label>
-                    <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">  
-                </div>
+<!--FORMULARIO CONTACTO-->
+<main class="formulario animate_animated animate_FadeIn">
+    <div class="contact-box">
+        <div class="tituloFormulario">
+            <h2>Contactanos!</h2>
+        </div>
+    <form action="ventas.html">
+            <div>
+                <label for="nombre" class="textoFormulario"> Nombre Completo </label>
+                <input id ="nombre" name="nombre" type="text" placeholder="Nombre y Apellido" minlength="3" maxlength="50" required autofocus autocomplete="off" class="field">  
+            </div>
 
-                <div>
-                    <label for="Mail">Mail</label>
-                    <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
-                </div>
+            <div>
+                <label for="Mail" class="textoFormulario">Mail</label>
+                <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required class="field">
+            </div>
 
-                <div>
+            <div>
+                 <label for="telefonicos" class="textoFormulario">Teléfono</label>
+                 <input id="telefonicos" name="teléfono" type="teléfono" placeholder="11 XXXXXXXX"required class="field">
+            </div>
 
-                     <label for="telefonicos">Teléfono</label>
-                     <input id="telefonicos" name="teléfono" type="teléfono" placeholder="11 XXXXXXXX"required>
-                </div>
-                <fieldset>
-                    <legend>Ingrese los siguientes Datos</legend>
-                    <legend>¿Sos socio?</legend>
-                    <label for="Si">Si
-                        <input id="Si" name="socio" type="radio" value="Si" checked >
-                    </label>
-                    <label for="No">No
-                        <input id="No" name="socio" type="radio" value="No" >
-                    </label>
-                
-                    <legend>Motivos del contacto</legend>
-                    <label for="planes">Quiero conocer los planes y costos.
-                        <input id="planes" name="planes" type="checkbox" value="planes">
-                    </label>
-                    <label for="sugerencia">Quiero realizar una consulta/sugerencia.
+            <fieldset>
+                <legend class="subtitulos">¿Sos socio?</legend>
+                <label for="Si" class="textoFormulario">Si
+                    <input id="Si" name="socio" type="radio" value="Si" checked class="field">
+                </label>
+                <label for="No" class="textoFormulario">No
+                    <input id="No" name="socio" type="radio" value="No" class="field">
+                </label>
+            
+                <div class="container">
+                <div class="row">
+                    <legend class="subtitulos">Motivos del contacto</legend>
+                    <label class="col-md-10 MotivoContacto" for="sugerencia">Quiero realizar una sugerencia.
                         <input id="sugerencia" name="sugerencia" type="checkbox" value="sugerencia">
                     </label>
-                    <label for="reclamo">Quiero realizar un reclamo.
-                        <input id="reclamo" name="reclamo" type="checkbox" value="reclamo" >
-                    </label>
-                
-                    <legend>Indique su edad</legend>
-                    <input id="edad" name="edad" type="number" min=1 max=100 required>      
-                </fieldset>
-                <fieldset>
-                    <legend>Seleccione la sede</legend>
-                        <label for="sede">Sedes disponibles</label>
-                        <select name="sede" id="sede">
-                            <option value="Al Río">Al Río</option>
-                            <option value="Barracas" selected>Barracas</option>
-                            <option value="Beiró">Beiró</option>
-                            <option value="Belgrano">Belgrano</option>
-                            <option value="Bella Vista">Bella Vista</option>
-                            <option value="Cabildo">Cabildo</option>
-                            <option value="Caballito">Caballito</option>
-                            <option value="Cabildo">Cabildo</option>
-                            <option value="Caseros">Caseros</option>
-                            <option value="Casterlar">Castelar</option>
-                            <option value="Córdoba">Córdoba</option>
-                            <option value="Escobar">Escobar</option>
-                            <option value="Flores">Flores</option>
-                            <option value="General Rodriguez">General Rodriguez</option>
-                            <option value="Isidro Casanova">Isidro Casanova</option>
-                            <option value="Martinez">Martinez</option>
-                            <option value="Mitre">Mitre</option>
-                            <option value="Palermo">Palermo</option>
-                            <option value="Pinamar Garden">Pinamar Garden</option>
-                            <option value="Plaza Italia">Plaza Italia</option>
-                            <option value="Puerto Madero">Puerto Madero</option>
-                            <option value="Rosario">Rosario</option>
-                            <option value="Tucumán">Tucumán</option>
-                            <option value="Unicenter">Unicenter</option>
-                            <option value="Urquiza">Urquiza</option>
-                        </select>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Indique un Comentario</legend>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
-                </fieldset>
-
-                <div>
-                        <input id="enviar" type="submit" value="Enviar">
-                        <input id="reset" type="reset" value="Limpiar">
+                    <label class="col-md-10 MotivoContacto" for="reclamo">Quiero realizar un reclamo.
+                        <input id="reclamo" name="reclamo" type="checkbox" value="reclamo">
+                    </label>   
+                    <label class="col-md-10 MotivoContacto" for="planes">Quiero conocer los planes y costos. 
+                        <input id="planes" name="planes" type="checkbox" value="planes">
+                    </label> 
+                </div> 
                 </div>
-            </form>
-        </div>
-<section>
-<!--FORMULARIO CONTACTO CORPORATIVO-->
-<section>
-        <h2>Formulario corporativo</h2>
-        <form action="ventas.html">
-            <div>
-                <label for="nombre"> Nombre Completo </label>
-                <input id ="nombre" name="nombre" type="text" placeholder="Ingrese Nombre y Apellido..." minlength="3" maxlength="50" required autofocus autocomplete="off">  
-            </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend class="subtitulos1">Indique un Comentario</legend>
+                <textarea name="comentario" id="comentario" cols="70" rows="4" placeholder="Ingrese su comentario" class="field"></textarea>
+            </fieldset>
 
             <div>
-                <label for="Mail">Mail</label>
-                <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                    <input id="btn1" type="submit" value="Enviar">
+                    <input id="btn2" type="reset" value="Limpiar">
             </div>
-
-            <div>
-
-                 <label for="telefonicos">Teléfono</label>
-                 <input id="telefonicos" name="teléfono" type="teléfono" placeholder="11 XXXXXXXX"required>
-            </div>
-                <div>
-                    <fieldset>
-                        <legend>Ingrese los siguientes Datos</legend>
-                        <div>
-                            <label for="Empresa">Nombre de la empresa</label>
-                            <input id="empresa" name="empresa" type="text" placeholder="nombre de la empresa" required>
-                        </div>
-        
-                        <div>
-        
-                             <label for="empleados">Cantidad de empleados</label>
-                             <input id="empleados" name="empleados" type="number" placeholder="Ingrese nuúmero"required>
-                        </div>
-                    </fieldset>
-                </div>
-
-                    <div>
-                        <input id="enviar" type="submit" value="Enviar">
-                        <input id="reset" type="reset" value="Limpiar">
-                    </div>
         </form>
-</section>
-
-
-<!--PREGUNTAS FRECUENTES PERSONAS-->
-<section>
-    <H2>Preguntas frecuentes</H2>
-        <div>
-            <h3>¿Cómo accedo a un pase de prueba gratis?</h3>
-            <p>Presentate en cualquier sede para pedir tu pase en el momento!</p>
-            <h3>¿Dónde puedo hacer el pato médico?</h3>
-            <p>Envía tu consulta a atencionalsocio@SomosSportClub.com.ar</p> 
-            <h3>¿Cómo hago para enviar mi CV?</h3>
-            <p>Envianos tu CV a postulante@SomosSportClub.com.ar</p>
-            <h3>¿Que necesito para empezar a entrenar?</h3>
-            <p>Tenés que acercarte a tu sucursal, en donde te tomarán la huella digital y podrás acceder a todas las sedes de tu categoría. También tenés que presentar un apto médico.</p>
-            <h3>¿A qué sucursales accedo siendo socio del Sindicato de Comercio?</h3>
-            <p>Podés acceder a:Ateneo de Juventud, Barrio Norte, Caballito, Devoto, Floresta, Megatlon Racing, Villa Crespo</p>
-            <h3>¿Cómo hago un reclamo?</h3>
-            <p>Para realizar tu reclamo, completá el formulario con tu nombre completo. Se estarán comunicando de tu sucursal para darte una respuesta.</p>
-        </div>
-</section>
-
+    </div>
 </main>
-
 
 <!--FOOTER-->
 <footer class="footerfinal"> 
@@ -246,8 +157,10 @@
     </div> 
     <p class="derechos">Copyright © 2022 Todos los derechos reservados</p>
     <p class="derechos">Gimnasios Argentinos S.A</p>
-</footer>
-   
+ </footer>
+
+
 <script src="../js/bootstrap.bundle.min.js"></script> 
+<script src="../js/index.js"></script>
 </body>
 </html>

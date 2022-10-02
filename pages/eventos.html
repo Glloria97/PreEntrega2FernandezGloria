@@ -9,6 +9,7 @@
     <title>SportClub-Eventos</title>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/scrollreveal.js"></script>
 </head>
 <body>
 
@@ -43,9 +44,9 @@
 
 
 <!--HEADER-->
-<header>
-    <img src="../imagenes/Eventos del mes.png" alt="portada eventos del mes"width="1255" height="600" loading="lazy">
-</header>
+<header class="HeaderEventos">
+    <img src="../imagenes/Eventos del mes.png" alt="headereventos" class="eventosimagen">
+ </header>
 
 
 <main>
@@ -60,56 +61,62 @@
 
 
 <!--PROXIMA MARATON-->
-     <section> 
+     <section class="maraton"> 
         <div>
-            <H2>Recibí la primera con esta maratón 5K/10K</H2>
-            <p>Sumate a esta proxima maratón el 25 de octubre solo para socios y familiares de socios y pasá una tarde increible en Vicente López</p>
-            <p>Recordá traer tu botellita de agua</p>
+            <H2 class="titulomaraton">Recibí la primera con esta maratón 5K/10K</H2>
+            <p class="textomaraton">Sumate a esta proxima maratón el 25 de octubre solo para socios y familiares de socios y pasá una tarde increible en Vicente López</p>
+            <p class="textomaraton">Recordá traer tu botellita de agua</p>
         </div>
-        <div>
-            <img src="../imagenes/Mraton.png" alt="Maraton 25/10 09.00 Vicente Lopez" width="550" height="300" loading="lazy">
+        <div class="contenedormaraton">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="../imagenes/Mraton.png" alt="Maraton 25/10 09.00 Vicente Lopez" loading="lazy" class="imagenmaraton">
+            </div>
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13153.820648938954!2d-58.49477460632545!3d-34.49134337883422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb171755281bf%3A0x1487c53b73146a83!2sCostanera%20La%20Lucila!5e0!3m2!1ses!2sar!4v1661728666384!5m2!1ses!2sar" width="350rem" height="90%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13153.820648938954!2d-58.49477460632545!3d-34.49134337883422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb171755281bf%3A0x1487c53b73146a83!2sCostanera%20La%20Lucila!5e0!3m2!1ses!2sar!4v1661728666384!5m2!1ses!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         </div>
     </section>
 
-    <section>
+    <section class="FondoDiaDelNiño">
         <div>
-            <H2>Día del Niño en SportClub Belgrano</H2>
-            <p>Encuentro de partido de volley entre socios y familiares de Belgrano! Proximos al torneo de la ciudad</p>
+            <H2 class="tituloDiaDelNiño">Día del Niño en SportClub Belgrano</H2>
+            <p class="parrafoDiaDelNiño">Encuentro de partido de volley entre socios y familiares de Belgrano! Proximos al torneo de la ciudad</p>
         </div>
         <div class="GaleriaEventos">
             <figure class="galeria_imagenes galeria_imagenes--g1"> 
-                <img src="../imagenes/Eventos dia del niño/1.jpg" alt="Chicas jugando volley"width="500" height="300" loading="lazy" class="galeria_img">
+                <img src="https://photographylife.com/wp-content/uploads/2014/09/Volleyball-8.jpg" alt="Chicas jugando volley"width="500" height="300" loading="lazy" class="galeria_img">
             </figure>
 
             <figure class="galeria_imagenes galeria_imagenes--g2">
-                <img src="../imagenes/Eventos dia del niño/2.jpg" alt="Chicas jugando volley"width="250" height="300" loading="lazy" class="galeria_img">
+                <img src="https://photographylife.com/wp-content/uploads/2014/09/Volleyball-9.jpg" alt="Chicas jugando volley"width="250" height="300" loading="lazy" class="galeria_img">
             </figure>
 
             <figure class="galeria_imagenes galeria_imagenes--g3"> 
-                <img src="../imagenes/Eventos dia del niño/3.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
+                <img src="https://photographylife.com/wp-content/uploads/2014/08/Volleyball-3.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
             </figure>
 
             <figure class="galeria_imagenes galeria_imagenes--g4"> 
-                <img src="../imagenes/Eventos dia del niño/3.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
+                <img src="https://i.pinimg.com/564x/64/30/ea/6430ea3764ecf1df3cc7c91952caa45b.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
             </figure>
 
             <figure class="galeria_imagenes galeria_imagenes--g5"> 
-                <img src="../imagenes/Eventos dia del niño/3.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
+                <img src="https://photographylife.com/wp-content/uploads/2014/08/Volleyball-1.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
             </figure>
 
             <figure class="galeria_imagenes galeria_imagenes--g6"> 
-                <img src="../imagenes/Eventos dia del niño/3.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
+                <img src="https://photographylife.com/wp-content/uploads/2014/09/Volleyball-9.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
             </figure>
 
             <figure class="galeria_imagenes galeria_imagenes--g7"> 
-                <img src="../imagenes/Eventos dia del niño/3.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
+                <img src="https://photographylife.com/wp-content/uploads/2014/09/Volleyball-9.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
             </figure>
 
             <figure class="galeria_imagenes galeria_imagenes--g8"> 
-                <img src="../imagenes/Eventos dia del niño/3.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
+                <img src="https://photographylife.com/wp-content/uploads/2014/09/Volleyball-8.jpg" alt="Chicas jugando volley"width="400" height="300" loading="lazy"class="galeria_img">
             </figure>
         </div>
     </section>
@@ -160,7 +167,9 @@
     <p class="derechos">Copyright © 2022 Todos los derechos reservados</p>
     <p class="derechos">Gimnasios Argentinos S.A</p>
 </footer>
+ </footer>
 
 <script src="../js/bootstrap.bundle.min.js"></script> 
+<script src="../js/index.js"></script>
 </body>
 </html>
