@@ -27,3 +27,10 @@ nav{
     bottom: 10px;
     right: 10px;
     z-index: 9999;}
+
+@media screen and (max-width: 768px){
+    .chatWhasapp{
+        visibility: hidden;}
+    .logoSportClub{
+        width:12rem!important;
+        height:2.3rem!important;}}

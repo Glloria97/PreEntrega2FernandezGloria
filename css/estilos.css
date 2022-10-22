@@ -40,6 +40,13 @@ nav {
   right: 10px;
   z-index: 9999; }
 
+@media screen and (max-width: 768px) {
+  .chatWhasapp {
+    visibility: hidden; }
+  .logoSportClub {
+    width: 12rem !important;
+    height: 2.3rem !important; } }
+
 /*FOOTER*/
 .RedesSociales {
   margin-top: 40px;
@@ -93,6 +100,11 @@ nav {
   color: black;
   text-align: center;
   padding-bottom: 30px; }
+
+@media screen and (max-width: 768px) {
+  .contenedorDerechos {
+    padding-top: 15%;
+    margin: 2%; } }
 
 /*SEPARADOR BLANCO*/
 main .SeparadorHeaderMain {
@@ -242,7 +254,11 @@ main .SeparadorHeaderMain {
 /*VERSIÓN MOBILE*/
 @media screen and (max-width: 768px) {
   .actividadesContenedor {
-    margin-left: 10%; } }
+    margin-left: 10%; }
+  .parrafos {
+    font-size: 1.2rem !important; }
+  .listadoDeAcciones {
+    font-size: 1.2rem !important; } }
 
 /*HEADER PLANES*/
 .HeaderPlanes {
@@ -288,7 +304,11 @@ main .SeparadorHeaderMain {
 @media screen and (max-width: 760px) {
   .textoplanes {
     margin-top: 0%;
-    margin-bottom: 3%; } }
+    margin-bottom: 3%; }
+  .textoplanes {
+    font-size: 1.2rem; }
+  .textooutdoor {
+    font-size: 1.2rem; } }
 
 /*VIDEO HEADER*/
 header {
