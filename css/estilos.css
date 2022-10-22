@@ -136,7 +136,6 @@ main .SeparadorHeaderMain {
   .QueOfrecemos .TituloYParrafos {
     padding-top: 6rem; }
   .QueOfrecemos .parrafos {
-    font-family: poppins;
     font-size: 1.5rem;
     color: white; }
 
@@ -253,15 +252,6 @@ main .SeparadorHeaderMain {
     .coaches .CoachesFotosYNombres img:hover {
       transform: scale(1.1, 1.1);
       background-color: rgba(0, 0, 0, 0.441) cover; }
-
-/*VERSIÓN MOBILE*/
-@media screen and (max-width: 768px) {
-  .actividadesContenedor {
-    margin-left: 10%; }
-  .parrafos {
-    font-size: 1.2rem !important; }
-  .listadoDeAcciones {
-    font-size: 1.2rem !important; } }
 
 /*HEADER PLANES*/
 .HeaderPlanes {
@@ -696,12 +686,12 @@ header {
       padding: 0.2rem; }
     .formulario .contact-box .subtitulos {
       font-family: poppins;
-      font-size: 1.7rem;
+      font-size: 17px;
       font-weight: bold;
       padding-left: 0% !important; }
     .formulario .contact-box .subtitulos1 {
       font-family: poppins;
-      font-size: 1.7rem;
+      font-size: 17px;
       font-weight: bold;
       margin-top: 10%; }
 

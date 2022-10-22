@@ -7,8 +7,6 @@ main{
 .SeparadorHeaderMain{
     height:15px;}}
 
-
-    
 /*QUE OFRECEMOS*/
 .QueOfrecemos{
     background-color: #121515;
@@ -24,7 +22,7 @@ main{
     .TituloYParrafos {
         padding-top: 6rem;}
     .parrafos{
-        @include estilos-sedes;
+        font-size: 1.5rem;
         color: rgb(255, 255, 255);}}
 
 /*ACTIVIDADES*/
@@ -47,7 +45,8 @@ main{
             box-shadow: 1px 2px 4px#363532;
             transition: transform 0.5s;
                 &:hover{
-                transform:scale(1.1,1.1);}}}}
+                transform:scale(1.1,1.1);
+            }}}}
 
 /*PLANES*/
 .planes img{
@@ -113,11 +112,3 @@ main{
                     transform: scale(1.1,1.1);
                     background-color: rgba(0, 0, 0, 0.441) cover;}}}}
 
-/*VERSIÓN MOBILE*/
-@media screen and (max-width: 768px) {
-    .actividadesContenedor{
-        margin-left: 10%;}
-    .parrafos {
-        font-size: 1.2rem !important;}
-    .listadoDeAcciones {
-        font-size: 1.2rem !important;}}
