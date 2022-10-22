@@ -136,7 +136,7 @@ main .SeparadorHeaderMain {
   .QueOfrecemos .TituloYParrafos {
     padding-top: 6rem; }
   .QueOfrecemos .parrafos {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white; }
 
 /*ACTIVIDADES*/
@@ -189,7 +189,7 @@ main .SeparadorHeaderMain {
 
 .valoresContenedor .valores ul {
   font-family: poppins;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
   color: black;
   padding-right: 2rem;
@@ -200,7 +200,7 @@ main .SeparadorHeaderMain {
 
 .valoresContenedor .listadoDeAcciones {
   font-family: poppins;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-left: 2rem;
   padding-bottom: 4rem; }
 
@@ -326,7 +326,7 @@ header {
   padding-bottom: 2%; }
   .horarios .ContainerTable H3 {
     font-family: poppins;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 20px;
     padding-top: 10px;
     text-align: center; }
@@ -395,7 +395,7 @@ header {
 
 .NuevasSedes .Almagro H3 {
   font-family: poppins;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-align: center; }
 
@@ -405,7 +405,7 @@ header {
 
 .NuevasSedes .Hurlingan H3 {
   font-family: poppins;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold; }
 
 .NuevasSedes p {
@@ -488,7 +488,7 @@ header {
   margin-bottom: 1%; }
   .DetalleSedes ul h3 {
     font-family: poppins;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold; }
   .DetalleSedes ul p a {
     background-color: #F8C216;
