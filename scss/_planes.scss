@@ -28,9 +28,3 @@
     margin-bottom: ($margen-bottom)+2;
     margin-left: map-get($map: $posicionamiento, $key:margen-left);
     margin-right: map-get($map: $posicionamiento, $key:margen-right);}
-
-@media screen and (max-width: 760px) {
-    .textoplanes{margin-top: 0%;
-    margin-bottom:($margen-bottom)+2;}
-    .textoplanes{font-size: 1.2rem;}
-    .textooutdoor{font-size: 1.2rem;}}

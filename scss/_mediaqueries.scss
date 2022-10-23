@@ -1,0 +1,48 @@
+@media screen and (max-width: 1088px){
+    .formulario{
+      .contact-box{
+            grid-template-columns: auto;
+            margin-top: 2%;
+            .tituloFormulario{
+                width: 0%;
+                height: 10VH;
+                H2{
+                    @include diseño-titulos;
+                    font-size: 6rem;
+                    margin-top: 1rem;}}}}}
+
+@media(max-width:1088px){
+.galeria{
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-areas:
+    'img1 img2'
+    'img1 img3'
+    'img1 img3'
+    'img4 img5'
+    'img4 img5'
+    'img4 img5'
+    'img7 img6'
+    'img7 img8';}
+
+.galeria_imagenes::before{
+    font-size: 1rem;}
+
+.contenedorDerechos{
+            padding-top: 15%;
+            margin: 2%;}
+        
+.textoplanes{margin-top: 0%;
+    margin-bottom:($margen-bottom)+2;}
+.textoplanes{font-size: 1.2rem;}
+.textooutdoor{font-size: 1.2rem;}
+
+header H1{
+    font-size: 300%;}}
+
+@media(max-width:1088px) {
+    .parrafos, .listadoDeAcciones, .valores1, .textomaraton,.parrafoDiaDelNiño, .textoplanes, .textooutdoor, .subtitulo, .Almagro, .Hurlingan, .direcciones, .subtitulos, .textoFormulario, .MotivoContacto, .field, .subtitulos1, #btn1, #btn2, .tituloForm {font-size: 2.5rem !important ;}
+    .coaches {font-size: 1.8rem !important ;}
+    .titulo, .NuestrosValoresTitulo, .titulomaraton, .tituloDiaDelNiño, .fondosPlanes{font-size: 4.2rem !important;}
+    .subs, .barrio{font-size: 3.2rem !important;
+        font-weight: bold;}
+    .tituloFormulario{padding-bottom: 4px !important;}}

@@ -1,6 +1,5 @@
 .formulario{
-    width: $ancho-imagenes;
-    height: 100%;  
+    width: $ancho-imagenes; 
     padding: 1.2rem 5rem;
     .field{
         width: $ancho-imagenes;
@@ -55,27 +54,10 @@
         .textoFormulario{
             @include estilos-parrafos;}
         .MotivoContacto{
-            @include estilos-parrafos;
-            padding: 0.2rem;}
+            @include estilos-parrafos;}
         .subtitulos{
-            @include estilos-subtitulos;
-            padding-left: 0% !important;}
+            @include estilos-subtitulos;}
         .subtitulos1{
             @include estilos-subtitulos;
             margin-top: map-get($map: $posicionamiento, $key:margen-top);}}}
 
-
-@media screen and (max-width: 880px){
-.formulario{
-    padding: 0%;
-    .contact-box{
-        grid-template-columns: auto;
-        margin-top: 2%;
-        .tituloFormulario{
-            width: 0%;
-            height: 15VH;
-            H2{
-                @include diseño-titulos;
-                font-size: 3.5rem;
-                margin-top: 1rem;
-                margin-bottom: 1rem;}}}}}

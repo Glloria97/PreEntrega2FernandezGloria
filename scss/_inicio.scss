@@ -15,19 +15,19 @@ main{
         width:($ancho-imagenes)-30;
         padding-top: map-get($map: $posicionamiento, $key:margen-top);
         margin-left: map-get($map: $posicionamiento, $key:margen-left)-5;}
-    div H1{
+    .titulo{
         @include diseño-titulos;
         font-size:260%;
         color: rgb(255, 255, 255);}
     .TituloYParrafos {
         padding-top: 6rem;}
     .parrafos{
-        font-size: 1.8rem;
+        @include estilos-sedes;
         color: rgb(255, 255, 255);}}
 
 /*ACTIVIDADES*/
 .actividadesContenedor{ 
-    h3{
+    .titulo{
         @include diseño-titulos;
         padding-top: 1.5%;}
 
@@ -88,7 +88,7 @@ main{
 
 /*COACHES DE SPORTCLUB*/
 .coaches{ 
-    H3{
+    .titulo{
         @include diseño-titulos;
         padding-top: 30px;
         padding-bottom: 20px;}

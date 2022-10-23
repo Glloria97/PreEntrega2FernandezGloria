@@ -6,8 +6,7 @@
   padding: 0px; }
 
 .html {
-  font-size: 10px;
-  width: 100%; }
+  font-size: 10px; }
 
 nav {
   display: flex;
@@ -101,11 +100,6 @@ nav {
   text-align: center;
   padding-bottom: 30px; }
 
-@media screen and (max-width: 768px) {
-  .contenedorDerechos {
-    padding-top: 15%;
-    margin: 2%; } }
-
 .bannerinicio {
   width: 100%; }
 
@@ -121,7 +115,7 @@ main .SeparadorHeaderMain {
     width: 70%;
     padding-top: 10%;
     margin-left: 15%; }
-  .QueOfrecemos div H1 {
+  .QueOfrecemos .titulo {
     font-size: 2.5rem;
     font-family: anton;
     letter-spacing: 2px;
@@ -136,11 +130,12 @@ main .SeparadorHeaderMain {
   .QueOfrecemos .TituloYParrafos {
     padding-top: 6rem; }
   .QueOfrecemos .parrafos {
-    font-size: 1.8rem;
+    font-family: poppins;
+    font-size: 1.5rem;
     color: white; }
 
 /*ACTIVIDADES*/
-.actividadesContenedor h3 {
+.actividadesContenedor .titulo {
   font-size: 2.5rem;
   font-family: anton;
   letter-spacing: 2px;
@@ -189,7 +184,7 @@ main .SeparadorHeaderMain {
 
 .valoresContenedor .valores ul {
   font-family: poppins;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
   color: black;
   padding-right: 2rem;
@@ -200,7 +195,7 @@ main .SeparadorHeaderMain {
 
 .valoresContenedor .listadoDeAcciones {
   font-family: poppins;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-left: 2rem;
   padding-bottom: 4rem; }
 
@@ -219,7 +214,7 @@ main .SeparadorHeaderMain {
     position: absolute; }
 
 /*COACHES DE SPORTCLUB*/
-.coaches H3 {
+.coaches .titulo {
   font-size: 2.5rem;
   font-family: anton;
   letter-spacing: 2px;
@@ -294,15 +289,6 @@ main .SeparadorHeaderMain {
   margin-left: 20%;
   margin-right: 5%; }
 
-@media screen and (max-width: 760px) {
-  .textoplanes {
-    margin-top: 0%;
-    margin-bottom: 3%; }
-  .textoplanes {
-    font-size: 1.2rem; }
-  .textooutdoor {
-    font-size: 1.2rem; } }
-
 /*VIDEO HEADER*/
 header {
   position: relative; }
@@ -322,67 +308,8 @@ header {
     top: 41%;
     left: 17%; }
 
-.horarios {
-  padding-bottom: 2%; }
-  .horarios .ContainerTable H3 {
-    font-family: poppins;
-    font-size: 1.8rem;
-    padding: 20px;
-    padding-top: 10px;
-    text-align: center; }
-  .horarios table {
-    background-color: #F8C216;
-    width: 95%;
-    margin-left: 3%;
-    box-shadow: 1px 2px 4px #363532; }
-  .horarios h2 {
-    font-size: 2.5rem;
-    font-family: anton;
-    letter-spacing: 2px;
-    font-style: italic;
-    margin-top: 1%;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 1.2%;
-    text-align: center; }
-  .horarios .horarios th {
-    font-family: poppins;
-    font-size: 1.3rem;
-    padding-top: 15px;
-    width: 135px;
-    border-bottom: solid 5px #775d08; }
-  .horarios .horarios td {
-    font-family: poppins;
-    font-size: 1.3rem;
-    padding-top: 15px; }
-
-@media screen and (max-width: 760px) {
-  .horarios {
-    padding-right: 15%; }
-    .horarios .ContainerTable {
-      margin-left: 25%; }
-    .horarios .horarios h2 {
-      margin-left: 25%; }
-    .horarios table {
-      padding: 5%; }
-      .horarios table caption {
-        font-size: 25px; }
-      .horarios table thead {
-        display: none; }
-      .horarios table th {
-        font-size: 17px; }
-      .horarios table td {
-        display: block;
-        text-align: right;
-        font-size: 17px; }
-        .horarios table td:before {
-          content: attr(data-label);
-          font-weight: bold;
-          text-transform: uppercase;
-          float: left; } }
-
 /*SEDES NUEVAS*/
-.NuevasSedes h2 {
+.NuevasSedes .titulo {
   font-size: 2.5rem;
   font-family: anton;
   letter-spacing: 2px;
@@ -393,22 +320,21 @@ header {
   margin-bottom: 1.2%;
   text-align: center; }
 
-.NuevasSedes .Almagro H3 {
+.NuevasSedes .Almagro {
   font-family: poppins;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.5rem;
   text-align: center; }
 
-.NuevasSedes .Almagro p {
+.NuevasSedes .parrafos {
   font-family: poppins;
   font-size: 1.2rem; }
 
-.NuevasSedes .Hurlingan H3 {
+.NuevasSedes .Hurlingan {
   font-family: poppins;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold; }
 
-.NuevasSedes p {
+.NuevasSedes .parrafos {
   font-family: poppins;
   font-size: 1.2rem; }
 
@@ -420,8 +346,6 @@ header {
   margin-bottom: 2%;
   background-color: #F8C216;
   text-align: center;
-  font-family: poppins;
-  font-size: 1.2rem;
   transition: transform 0.5s; }
   .demasSedes ul:hover {
     transform: scale(1.1, 1.1); }
@@ -434,7 +358,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("https://images.pexels.com/photos/1552245/pexels-photo-1552245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); }
-  .parallax1 H3, .parallax2 H3, .parallax3 H3 {
+  .parallax1 .titulo, .parallax2 .titulo, .parallax3 .titulo {
     padding-top: 7%;
     margin-left: 10%;
     font-size: 2.5rem;
@@ -451,7 +375,7 @@ header {
 
 .parallax2 {
   background-image: url("https://images.pexels.com/photos/4761352/pexels-photo-4761352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); }
-  .parallax2 H3 {
+  .parallax2 .titulo {
     padding-top: 7%;
     margin-left: 10%;
     font-size: 2.5rem;
@@ -468,7 +392,7 @@ header {
 
 .parallax3 {
   background-image: url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); }
-  .parallax3 H3 {
+  .parallax3 .titulo {
     padding-top: 7%;
     margin-left: 10%;
     font-size: 2.5rem;
@@ -486,11 +410,15 @@ header {
 .DetalleSedes ul {
   margin-top: 1%;
   margin-bottom: 1%; }
-  .DetalleSedes ul h3 {
+  .DetalleSedes ul .barrio {
     font-family: poppins;
     font-size: 1.8rem;
     font-weight: bold; }
-  .DetalleSedes ul p a {
+  .DetalleSedes ul .direcciones {
+    font-family: poppins;
+    font-weight: 1.3rem;
+    font-weight: bold; }
+  .DetalleSedes ul .direcciones a {
     background-color: #F8C216;
     text-decoration: none;
     color: #050505;
@@ -499,14 +427,10 @@ header {
     padding: 0 0.25rem;
     margin: 0 -0.25rem;
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; }
-    .DetalleSedes ul p a:hover {
+    .DetalleSedes ul .direcciones a:hover {
       color: #ffffff;
       background-color: #000000;
       text-decoration: none; }
-
-@media screen and (max-width: 760px) {
-  header H1 {
-    font-size: 300%; } }
 
 .eventosimagen {
   width: 100%;
@@ -610,16 +534,8 @@ header {
         height: 100%;
         object-fit: cover; }
 
-@media (max-width: 768px) {
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'img1 img2' 'img1 img3' 'img1 img3' 'img4 img5' 'img4 img5' 'img4 img5' 'img7 img6' 'img7 img8'; }
-  .galeria_imagenes::before {
-    font-size: 1rem; } }
-
 .formulario {
   width: 100%;
-  height: 100%;
   padding: 1.2rem 5rem; }
   .formulario .field {
     width: 100%;
@@ -682,38 +598,65 @@ header {
       font-size: 1.3rem; }
     .formulario .contact-box .MotivoContacto {
       font-family: poppins;
-      font-size: 1.3rem;
-      padding: 0.2rem; }
+      font-size: 1.3rem; }
     .formulario .contact-box .subtitulos {
       font-family: poppins;
-      font-size: 17px;
-      font-weight: bold;
-      padding-left: 0% !important; }
+      font-size: 1.8rem;
+      font-weight: bold; }
     .formulario .contact-box .subtitulos1 {
       font-family: poppins;
-      font-size: 17px;
+      font-size: 1.8rem;
       font-weight: bold;
       margin-top: 10%; }
 
-@media screen and (max-width: 880px) {
-  .formulario {
-    padding: 0%; }
-    .formulario .contact-box {
-      grid-template-columns: auto;
-      margin-top: 2%; }
-      .formulario .contact-box .tituloFormulario {
-        width: 0%;
-        height: 15VH; }
-        .formulario .contact-box .tituloFormulario H2 {
-          font-size: 2.5rem;
-          font-family: anton;
-          letter-spacing: 2px;
-          font-style: italic;
-          margin-top: 1%;
-          text-align: center;
-          color: #000000;
-          margin-bottom: 1.2%;
-          text-align: center;
-          font-size: 3.5rem;
-          margin-top: 1rem;
-          margin-bottom: 1rem; } }
+@media screen and (max-width: 1088px) {
+  .formulario .contact-box {
+    grid-template-columns: auto;
+    margin-top: 2%; }
+    .formulario .contact-box .tituloFormulario {
+      width: 0%;
+      height: 10VH; }
+      .formulario .contact-box .tituloFormulario H2 {
+        font-size: 2.5rem;
+        font-family: anton;
+        letter-spacing: 2px;
+        font-style: italic;
+        margin-top: 1%;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 1.2%;
+        text-align: center;
+        font-size: 6rem;
+        margin-top: 1rem; } }
+
+@media (max-width: 1088px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'img1 img2' 'img1 img3' 'img1 img3' 'img4 img5' 'img4 img5' 'img4 img5' 'img7 img6' 'img7 img8'; }
+  .galeria_imagenes::before {
+    font-size: 1rem; }
+  .contenedorDerechos {
+    padding-top: 15%;
+    margin: 2%; }
+  .textoplanes {
+    margin-top: 0%;
+    margin-bottom: 3%; }
+  .textoplanes {
+    font-size: 1.2rem; }
+  .textooutdoor {
+    font-size: 1.2rem; }
+  header H1 {
+    font-size: 300%; } }
+
+@media (max-width: 1088px) {
+  .parrafos, .listadoDeAcciones, .valores1, .textomaraton, .parrafoDiaDelNiño, .textoplanes, .textooutdoor, .subtitulo, .Almagro, .Hurlingan, .direcciones, .subtitulos, .textoFormulario, .MotivoContacto, .field, .subtitulos1, #btn1, .formulario #btn2, #btn2, .tituloForm {
+    font-size: 2.5rem !important; }
+  .coaches {
+    font-size: 1.8rem !important; }
+  .titulo, .NuestrosValoresTitulo, .titulomaraton, .tituloDiaDelNiño, .fondosPlanes {
+    font-size: 4.2rem !important; }
+  .subs, .barrio {
+    font-size: 3.2rem !important;
+    font-weight: bold; }
+  .tituloFormulario {
+    padding-bottom: 4px !important; } }

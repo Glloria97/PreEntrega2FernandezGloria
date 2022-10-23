@@ -9,73 +9,22 @@ header{
         top: 41%;
         left: 17%;}}
 
-.horarios{
-    padding-bottom: ($margen-bottom)+1;
-    .ContainerTable H3{
-        @include estilos-sedes;
-        padding:20px;
-        padding-top: 10px;
-        text-align: center;}
-    table{
-        background-color: $fondo-amarillo;
-        width: 95%;
-        margin-left:map-get($map: $posicionamiento, $key:margen-left)-17;
-        box-shadow: 1px 2px 4px#363532;}
-    h2{
-        @include diseño-titulos;}
-    .horarios th{
-        @include estilos-parrafos;
-        padding-top: 15px;
-        width:135px;
-        border-bottom: solid 5px #775d08;}
-    .horarios td{
-        @include estilos-parrafos;
-        padding-top: 15px;}}
-
-@media screen and (max-width: 760px) {
-    .horarios{
-        padding-right: 15%;
-        .ContainerTable{
-            margin-left:map-get($map: $posicionamiento, $key:margen-left)+5;}
-        .horarios h2{
-            margin-left: map-get($map: $posicionamiento, $key:margen-left)+5;}
-        table{
-            padding: 5%;
-            caption{
-                font-size: 25px;}
-            thead {
-                display: none;}
-            th{
-                font-size: 17px;}
-            td{
-                display: block;
-                text-align: right;
-                font-size: 17px;
-                &:before {
-                    content: attr(data-label);
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    float: left;}}}}
-            
-                }          
+          
 /*SEDES NUEVAS*/
 .NuevasSedes{ 
-    h2{
+    .titulo{
         @include diseño-titulos;}
-    .Almagro{ 
-        H3{
+    .Almagro{
             @include estilos-sedes;
-            font-weight: bold;
             text-align: center;}
-        p{
-            @include estilos-letra-chica;}}
+            .parrafos{
+                @include estilos-letra-chica;}
 
-    .Hurlingan 
-        H3{
+    .Hurlingan {
             @include estilos-sedes;
             font-weight: bold;}
 
-        p{
+        .parrafos{
             @include estilos-letra-chica;}}
 
 /*DEMÁS SEDES*/
@@ -87,7 +36,6 @@ header{
     margin-bottom: map-get($map: $posicionamiento, $key:margen-bottom)-3;
     background-color: $fondo-amarillo;;
     text-align: center;
-    @include estilos-letra-chica;
     transition: transform 0.5s; 
     &:hover{
             transform:scale(1.1,1.1);}}
@@ -100,7 +48,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("https://images.pexels.com/photos/1552245/pexels-photo-1552245.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    H3{
+    .titulo{
         padding-top:7%;
         margin-left: map-get($map: $posicionamiento, $key:margen-left)-10;
         @include diseño-titulos;
@@ -111,7 +59,7 @@ header{
 .parallax2{
     @extend .parallax1;
     background-image: url("https://images.pexels.com/photos/4761352/pexels-photo-4761352.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    H3{
+    .titulo{
         padding-top:7%;
         margin-left: map-get($map: $posicionamiento, $key:margen-left)-10;
         @include diseño-titulos;
@@ -121,7 +69,7 @@ header{
 .parallax3{
     @extend .parallax1;
     background-image: url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-    H3{
+    .titulo{
         padding-top:7%;
         margin-left: map-get($map: $posicionamiento, $key:margen-left)-10;
         @include diseño-titulos;
@@ -132,10 +80,14 @@ header{
 .DetalleSedes ul{
     margin-top: 1%;
     margin-bottom: 1%;
-    h3{
-        @include estilos-sedes;
+    .barrio{
+        @include estilos-subtitulos;
+    }
+    .direcciones{
+        font-family: poppins;
+        font-weight: 1.3rem;
         font-weight: bold;}
-    p a{
+    .direcciones a{
         background-color: $fondo-amarillo;
         text-decoration: none;
         color: #050505;
@@ -148,8 +100,4 @@ header{
             color: #ffffff;
             background-color: #000000;
             text-decoration: none;}}}
-
-@media screen and (max-width: 760px) {
-    header H1{
-        font-size: 300%;}}
 
