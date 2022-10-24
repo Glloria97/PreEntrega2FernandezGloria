@@ -34,7 +34,7 @@ main{
     .TipoDeActividades{
         div{
             padding: 1rem !important;}
-        p{
+        .parrafos1{
             @include estilos-letra-chica;
             text-align: center;
             transition: transform 3s;

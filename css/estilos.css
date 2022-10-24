@@ -39,7 +39,7 @@ nav {
   right: 10px;
   z-index: 9999; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1088px) {
   .chatWhasapp {
     visibility: hidden; }
   .logoSportClub {
@@ -150,7 +150,7 @@ main .SeparadorHeaderMain {
 .actividadesContenedor .TipoDeActividades div {
   padding: 1rem !important; }
 
-.actividadesContenedor .TipoDeActividades p {
+.actividadesContenedor .TipoDeActividades .parrafos1 {
   font-family: poppins;
   font-size: 1.2rem;
   text-align: center;
@@ -647,16 +647,3 @@ header {
     font-size: 1.2rem; }
   header H1 {
     font-size: 300%; } }
-
-@media (max-width: 1088px) {
-  .parrafos, .listadoDeAcciones, .valores1, .textomaraton, .parrafoDiaDelNiño, .textoplanes, .textooutdoor, .subtitulo, .Almagro, .Hurlingan, .direcciones, .subtitulos, .textoFormulario, .MotivoContacto, .field, .subtitulos1, #btn1, .formulario #btn2, #btn2, .tituloForm {
-    font-size: 2.5rem !important; }
-  .coaches {
-    font-size: 1.8rem !important; }
-  .titulo, .NuestrosValoresTitulo, .titulomaraton, .tituloDiaDelNiño, .fondosPlanes {
-    font-size: 4.2rem !important; }
-  .subs, .barrio {
-    font-size: 3.2rem !important;
-    font-weight: bold; }
-  .tituloFormulario {
-    padding-bottom: 4px !important; } }
